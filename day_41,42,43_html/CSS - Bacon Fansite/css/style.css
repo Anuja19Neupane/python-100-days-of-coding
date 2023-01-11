@@ -1,0 +1,27 @@
+body{
+    background-color: pink ;
+}
+h1{
+    color: blue;
+}
+img:hover{
+    background-color:gold;
+}
+
+.bacon{
+    background-color: yellow;
+}
+img {
+    height: 200px; /* sets the height of the image to 200 pixels */
+  }
+
+#topic{
+    color:green;
+}
+.broccoli{
+    background-color: white;
+}
+
+.circular{
+    border-radius: 50%;
+}

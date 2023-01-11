@@ -1,0 +1,84 @@
+def area(radius):
+    #  radius is called argument
+
+    # pi is local variable in this function scope, it can only be accessed inside this function
+    pi = 3.1415
+    b = pi*radius*radius
+    radius = 4
+    # if nothging is returned from the function, None is returned automatically
+    return b
+
+
+a = 6
+# value retured by the area function is give to the variable in the left
+#  it behaves something like  myarea<=area(a)
+myarea = area(a)
+print(myarea)
+print(a)
+
+
+# copy by reference
+a = [1, 2, 3]
+b = a  # b and a both points to same bucket
+b.append(4)  # 4 is appended to the bucket pointed by b, hence bucket pointed
+# by a is also modified because they point to same bucket
+
+# new object is created and only pointer is changed when we assign new value
+a = [1, 2, 3]
+b = a  # b and a points to same bucket
+b = [4, 5, 6]  # b has changed the bucket to point to, now b points to second bucket
+# bucket pointed by b is changed but bucket pointed by a remain unchanged
+b.append(7)
+# because they point to different bucket
+
+print(a)  # [1,2,3]
+print(b)  # [4,5,6,7]
+
+
+# next example
+# when we call function parameters passed in the function call is copied to the
+# function definition
+def foo(mylist):
+    mylist.append(1)
+    print(mylist)  # [1,2,3,1]
+
+
+a = [1, 2, 3]
+foo(a)  # function call, this function changes a inside its definition
+# because pointer is copied when we call the function
+print(a)  # [1,2,3,1]
+
+
+# next example
+def foo(mylist):
+    # new bucket is created which has 7,8,9 and now mylist is pointing
+    mylist = [7, 8, 9]
+    # to this new bucket but a keeps pointing to old bucket containing [1,2,3]
+    print(mylist)  # [7,8,9]
+
+
+a = [1, 2, 3]
+foo(a)
+print(a)  # [1,2,3]
+
+
+# use of enumerate function
+word = "apple"
+for index, letter in enumerate(word):
+    print(index, letter)
+
+
+# we can make our own enumerate function to guess how it may work
+def my_enumerate(mystr):
+
+    result = []
+    for i in range(len(mystr)):
+        result.append((i, mystr[i]))
+
+    # it returns something like this
+    # [(0,'a'),(1,'b'),...]
+    return result
+
+
+for index, letter in my_enumerate(word):
+    print(index, letter)
