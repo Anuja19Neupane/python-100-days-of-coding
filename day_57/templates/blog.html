@@ -1,0 +1,36 @@
+<!--Jinja is a templating engine for Python.
+     It allows developers to create dynamic templates for web applications,
+      in which the template's structure remains fixed while the data displayed within it can change.
+       Jinja can be used to generate HTML, XML, or other markup formats, 
+        as well as source code in other languages.
+ It is often used in combination with a web framework such as Flask or Django. -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title> 
+    
+    <!-- css -->
+
+    <link rel="stylesheet" href="static/css/styles.css">
+
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/7e3a953404.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    {% for blog_post in blogs: %}
+        <section id="title1"> 
+            <h1>{{blog_post ["title"]}}</h1>
+            <i class="fa-solid fa-square-down"></i>
+            
+        </section>
+        <section id="body1">
+            <h2>{{blog_post ["body"]}}</h2>
+        </section>
+    {% endfor %}
+</body>
+</html>
