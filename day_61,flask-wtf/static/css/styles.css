@@ -1,0 +1,13 @@
+#welcome{
+    background-color: bisque;
+    width: 200px;
+}
+
+#ready{
+    color: chocolate;
+}
+
+#login_id{
+    width: 100px;
+    font-size: 29px;
+}

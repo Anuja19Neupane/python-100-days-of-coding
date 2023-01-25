@@ -2,13 +2,14 @@
 <html>
 <head>
 	<title>Secrets</title>
+	<link rel="stylesheet" href="static/css/styles.css">
 </head>
 <body>
 <div class="jumbotron">
 	<div class="container">
-		<h1>Welcome</h1>
-		<p>Are you ready to discover my secret?</p>
-		<button class="btn btn-primary btn-lg" href=" {{ url_for('login') }} ">Login</button>
+		<h1 id="welcome" >Welcome</h1>
+		<h2 id="ready">Are you ready to discover my secret?</h2>
+		<button id="login_id"> <a  class="btn btn-primary btn-lg" href="{{ url_for('login') }}">Login</a></button>
 	</div>
 </div>
 </body>
