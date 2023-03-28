@@ -24,7 +24,7 @@ def make_emphasis(func):
 def helloworld():
     return '<h1 style="text-align:center">Hello,world!</h1>\
         <p>This is a paragraph</p>\
-        <img src="https://neupaneaayush.com.np/images/bio-photo.jpg" width=200>'
+        <img src="https://media3.giphy.com/media/3o7abAHdYvZdBNnGZq/200w.webp?cid=ecf05e475fjikz0ut4krmu7g6udogx2amb54afmwd6hw36n9&rid=200w.webp&ct=g" width=200>'
        
 
 @app.route("/bye")

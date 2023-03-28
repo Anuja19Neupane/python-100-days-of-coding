@@ -14,7 +14,7 @@ sign_in.click()
 
 
 # to click in email
-email=driver.find_element_by_name("username")
+email=driver.find_element_by_id("login-username")
 email.click()
 
 # to give data in email
@@ -22,12 +22,12 @@ give_email=email.send_keys("anujaneupane20@gmail.com")
 email.send_keys(Keys.ENTER)
 
 # to tick i am not robot
-not_robot=driver.find_element_by_class_name("recaptcha-checkbox-border")
+not_robot=driver.find_element_by_class_name("bucket-mbr-push-upshell-exp2")
 not_robot.send_keys(Keys.ENTER)
 
 
 
-#to click in next
+to click in next
 
 
 

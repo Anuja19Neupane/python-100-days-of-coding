@@ -1,0 +1,43 @@
+CREATE TABLE new-cafe (
+  id INT PRIMARY KEY,
+  name VARCHAR(250) NOT NULL UNIQUE,
+  map_URL VARCHAR(250) NOT NULL,
+  img_URL VARCHAR(250) NOT NULL,
+  location VARCHAR(250) NOT NULL,
+  has_sockets BOOL NOT NULL,
+  has_toilet BOOL NOT NULL,
+  has_wifi BOOL NOT NULL,
+  can_take_calls BOOL NOT NULL,
+  seats VARCHAR(250),
+  coffee_price VARCHAR(250)
+);
+
+CREATE TABLE cafe (
+  id INT PRIMARY KEY,
+  name VARCHAR(250) NOT NULL UNIQUE,
+  map_url VARCHAR(500) NOT NULL,
+  img_url VARCHAR(500) NOT NULL,
+  location VARCHAR(250) NOT NULL,
+  has_sockets BOOL NOT NULL,
+  has_toilet BOOL NOT NULL,
+  has_wifi BOOL NOT NULL,
+  can_take_calls BOOL NOT NULL,
+  seats VARCHAR(250),
+  coffee_price VARCHAR(250)
+);
+
+CREATE TABLE sqlitestudio_temp_table (
+  id INT,
+  name TEXT,
+  map_url TEXT,
+  img_url TEXT,
+  location TEXT,
+  has_sockets INT,
+  has_toilet INT,
+  has_wifi INT,
+  can_take_calls INT,
+  seats TEXT
+);
+
+
+

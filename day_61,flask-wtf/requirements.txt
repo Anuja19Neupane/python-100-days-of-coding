@@ -1,2 +1,0 @@
-Flask==1.0.2 #but now there is flask==2.0.1
-flask
