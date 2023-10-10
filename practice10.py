@@ -9,7 +9,7 @@ def sum_squares(numbers):
         new_list.append(num**2)
     return sum(new_list)
 
-# Example usage
+
 
 sum_of_squares = sum_squares(numbers)
 print(f"sum_of_squares is: {sum_of_squares}")
