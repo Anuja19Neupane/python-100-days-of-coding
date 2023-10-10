@@ -13,4 +13,4 @@ def reverse_words(sentence):
 
 
 reversed_sentence = reverse_words(sentence)
-print("The reversed sentence is: " + reversed_sentence)
+print(f"The reversed sentence is: { reversed_sentence}")
