@@ -6,7 +6,7 @@ screen = Screen()
 # 'width' and 'height' lekhna compulsory haina value matra lekhda hunxa tara chinna ko lagi lekheko maile
 screen.setup(width=500, height=400)
 user_bet = screen.textinput(
-    title="make your bet", prompt="which turtle will win the race? enter a color: ")
+    title="make your bet", prompt="which turtle will win the race? orange, yellow, green, blue, purple, red?:  ")
 print(f"you choose: {user_bet}")
 colors = ["red", "orange", "yellow", "green", "blue", "purple"]
 y_positions = [-70, -40, -10, 20, 50, 80]
